@@ -1,0 +1,49 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    bottom: 2.5%;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+}
+
+.navbar a {
+    font-size: 1.25vw;
+    color: white;
+}
+
+@media only screen and (max-device-width : 640px) {
+    .navbar a {
+        font-size: 5vw;
+    }
+}
+    
+
+.navbar .social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+.navbar .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.navbar #social-cog {
+    padding-left: 2vw;
+}
+
+.navbar #social-insta {
+    margin-right: 2vw;
+}
+
+@media only screen and (max-device-width : 640px) {
+    .navbar #social-cog #social-insta {
+        padding-left: 10vw;
+    }
+}
