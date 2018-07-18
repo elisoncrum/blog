@@ -1,9 +1,19 @@
 .share {
-	color:white;
-	text-align: center !important;
+    text-align: center !important;
 }
 
-.share .fa-share {
+.fa-copy {
+    color:white;
+}
+
+.fa-check-square {
+    color: green;
+}
+.share a {
+    cursor: pointer;
+}
+
+.share .fa-3x{
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
@@ -11,7 +21,7 @@
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
 }
-.share .fa-share:hover {
+.share .fa-3x:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);

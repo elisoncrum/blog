@@ -11,3 +11,9 @@ body * {
 }
 
 figure * { display: block; }
+
+.container {
+	text-align: unset;
+	padding-left: unset;
+	padding-right: unset;
+}

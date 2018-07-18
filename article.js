@@ -10,28 +10,21 @@ while (true){
     i++;
 }
 for (var x = i - 1; x > 0; x--){
-    console.log(x);
     readFile("articles/" + x + ".article");
 }
+var spacer = document.createElement("div");
+spacer.style = "padding-bottom:10%";
+document.body.appendChild(article);
 
-function copyToClipboard(elementId) {
+function copyToClipboard(x) {
 
-    // Create an auxiliary hidden input
+    var item = document.getElementsByClassName(x)[0];
+    item.setAttribute("class", "far fa-check-square fa-3x " + x);
     var aux = document.createElement("input");
-  
-    // Get the text from the element passed into the input
-    aux.setAttribute("value", window.location.href.split("/")[2] + "/#" + elementId);
-  
-    // Append the aux input to the body
+    aux.setAttribute("value", window.location.href.split("/")[2] + "/#" + x);
     document.body.appendChild(aux);
-  
-    // Highlight the content
     aux.select();
-  
-    // Execute the copy command
     document.execCommand("copy");
-  
-    // Remove the input from the body
     document.body.removeChild(aux);
   
 }
@@ -126,10 +119,13 @@ function readFile(file) {
                 div.setAttribute("class", "share");
                 var share = document.createElement("a");
                 share.id = "no-shadow";
+                //data-original-title="Some tooltip text!"
+                share.setAttribute("data-toggle", "tooltip");
+                share.setAttribute("data-original-title", "Copy blog link")
                 share.setAttribute("onclick", "copyToClipboard(\'" + article.id + "\')");
-                share.setAttribute("class", "share");
+                
                 var icon = document.createElement("i");
-                icon.setAttribute("class", "fas fa-share fa-2x");
+                icon.setAttribute("class", "far fa-copy fa-3x " + article.id);
                 share.appendChild(icon);
                 div.appendChild(share)
                 article.appendChild(div);
@@ -137,6 +133,7 @@ function readFile(file) {
                 //<a href="#" id="social-cog" ><i class="fas fa-cog fa-3x social"></i></a>
                 article.insertBefore(time, article.childNodes[2]);
                 document.body.appendChild(article);
+
             }
         )
 }
