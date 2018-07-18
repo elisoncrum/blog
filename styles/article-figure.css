@@ -6,12 +6,15 @@
 .size-1 img, .size-2 img, .size-3 img, .size-4 img { width: 100%; }
 
 figcaption {
-    margin-bottom: 0.5rem;
-    color: aliceblue;
+    margin-bottom: 0.75rem;
     display: flex;
 	justify-content: center;    
 }
 
 body {
     padding-bottom: 75px;
+}
+
+figure {
+    margin-bottom: unset;
 }

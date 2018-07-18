@@ -12,6 +12,18 @@ while (true){
 for (var x = i - 1; x > 0; x--){
     readFile("articles/" + x + ".article");
 }
+function changeCss() {
+    var style = document.getElementById("theme");
+    var theme = style.getAttribute("value");
+    if (theme == "dark"){
+        theme = "light";
+    } else {
+        theme = "dark";
+    }
+    style.setAttribute("value", theme)
+    style.setAttribute("href", "styles/article-text-" + theme + ".css");
+
+}
 
 function copyToClipboard(x) {
 

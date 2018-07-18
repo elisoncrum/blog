@@ -3,7 +3,6 @@
     left: 0;
     bottom: 2.5%;
     width: 100%;
-    color: white;
     text-align: center !important;
     justify-content: center;
 }
@@ -11,10 +10,6 @@
 .container {
     justify-content: center !important;
     padding-right: 30px;
-}
-.navbar a {
-    font-size: 2.0rem/1.2;
-    color: white;
 }
 @media only screen and (max-device-width : 640px) {
     .navbar a {
@@ -43,11 +38,4 @@
 
 .navbar #social-insta {
     margin-right: 2vw;
-}
-
-@media only screen and (max-device-width : 640px) {
-    .spacer{
-        background-color: #212121;
-        padding-top: 50px;
-    }
 }

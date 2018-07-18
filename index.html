@@ -34,10 +34,9 @@
 		<link rel="manifest" href="favicon/manifest.json">
 
 		<script type="text/javascript" src="article.js"></script>
-        <link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="styles/article.css">
 		<link rel="stylesheet" href="styles/article-figure.css">
-		<link rel="stylesheet" href="styles/article-text-light.css">
+		<link id="theme" value="dark" rel="stylesheet" href="styles/article-text-dark.css">
 		<link rel="stylesheet" href="styles/article-share.css">
 		<link rel="stylesheet" href="styles/navbar.css">
 
@@ -57,7 +56,7 @@
 				<div class="box">
 					<a href="#" id="social-insta"><i class="fab fa-instagram fa-3x social"></i></a>
 					<a href="mailto:#" id="social-mail" ><i class="far fa-envelope fa-3x social"></i></a>
-					<a href="#" id="social-cog" ><i class="fas fa-cog fa-3x social"></i></a>
+					<a onclick="changeCss()" href="javascript:void(0);" id="social-cog" ><i class="fas fa-cog fa-3x social"></i></a>
 				</div>
 			</div>
 		</section>
