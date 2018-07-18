@@ -12,9 +12,6 @@ while (true){
 for (var x = i - 1; x > 0; x--){
     readFile("articles/" + x + ".article");
 }
-var spacer = document.createElement("div");
-spacer.style = "padding-bottom:10%";
-document.body.appendChild(article);
 
 function copyToClipboard(x) {
 

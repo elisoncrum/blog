@@ -13,7 +13,7 @@ figcaption {
 }
 
 .spacer {
-    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 @media only screen and (max-device-width : 780px) {
