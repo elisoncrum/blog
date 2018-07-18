@@ -12,13 +12,6 @@ figcaption {
 	justify-content: center;    
 }
 
-.spacer {
-    padding-bottom: 5%;
-}
-
-@media only screen and (max-device-width : 780px) {
-    .spacer {
-        margin:0 auto;
-        padding-bottom: 10%;
-    }    
+body {
+    padding-bottom: 7%;
 }
