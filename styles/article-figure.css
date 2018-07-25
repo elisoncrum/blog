@@ -18,3 +18,7 @@ body {
 figure {
     margin-bottom: unset;
 }
+
+.carousel {
+    margin-bottom: 0.75rem;
+}

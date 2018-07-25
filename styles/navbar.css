@@ -5,6 +5,7 @@
     width: 100%;
     text-align: center !important;
     justify-content: center;
+    z-index: 100;
 }
 
 .container {
@@ -17,7 +18,6 @@
     }
 }
     
-
 .navbar .social {
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
