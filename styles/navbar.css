@@ -12,6 +12,7 @@
     justify-content: center !important;
     padding-right: 30px;
 }
+
 @media only screen and (max-device-width : 640px) {
     .navbar a {
         font-size: 5vw;
@@ -37,5 +38,9 @@
 }
 
 .navbar #social-insta {
+    margin-right: 2vw;
+}
+
+.navbar #social-git {
     margin-right: 2vw;
 }

@@ -1,25 +1,21 @@
-body {
-    background-color: #212121;
-}
-
 h1           { font: 700 2.0rem/1.2 "Roboto"; color: #EEEEEE; margin: unset;}
 h2           { font: 400 1.5rem/1.2 "Roboto"; color: #d3d3d3; margin-bottom: 1.2rem;}
 time         { font: 700 1.0rem/1.2 "Roboto"; color: #7CB342; }
 h3           { font: 700 1.0rem/1.2 "Roboto"; color: #7CB342}
 p            { font: 400 1.0rem/1.5 "Roboto"; color: #EEEEEE; }
-figcaption { font: 400 1.0rem/1.5 "Roboto"; color: #ffffff66; font-style: italic; }
+figcaption { font: 400 1.0rem/1.5 "Roboto"; color: white; font-style: italic; }
+
+body { background-color: #212121; }
 
 a:not(.carousel-control-next):not(.carousel-control-prev):not(.no-shadow) { box-shadow: inset 0 -0.15em #00ACC1; }
-#no-shadow { box-shadow: unset };
-#no-shadow:hover {color:unset;}
-
-@media (max-width: 8.5in) { :root { font-size: 18px; } }
-@media (max-width: 5.0in) { :root { font-size: 16px; } }
 
 a:hover {
     color: #CCCCCC;
     text-decoration: unset;
 }
+
+@media (max-width: 8.5in) { :root { font-size: 18px; } }
+@media (max-width: 5.0in) { :root { font-size: 16px; } }
 
 .navbar {
     color: #545454;
@@ -32,8 +28,3 @@ a:hover {
 .fa-copy {
     color: #EEEEEE;
 }
-
-figcaption {
-    color: white;
-}
-

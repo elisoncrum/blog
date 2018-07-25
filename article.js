@@ -140,7 +140,6 @@ function createSlideshow(captions, paths){
     carousel.appendChild(prev);
     outer_figure.appendChild(carousel);
     return outer_figure;
-
 }
 
 function readFile(file) {
@@ -164,7 +163,7 @@ function readFile(file) {
                         time.id = lines[i];
                         let date = time.id.split("-");
                         let time_a = document.createElement("a");
-                        time_a.id = "no-shadow";
+                        time_a.setAttribute("class", "no-shadow");
                         time_a.href = "#" + lines[i];
                         time_a.innerHTML = monthNames[parseInt(date[0]) - 1] + " " + date[1] + ", 20" + date[2];
                         time.appendChild(time_a);
@@ -176,11 +175,12 @@ function readFile(file) {
                             content += lines[index];
                             index++;
                         }
-                        //possibly make a better engine for formatting?
+                        //possibly make a better engine for formatting?\
+                        content = content.replace(/([\_]{2})(.*?)([\_]{2})/g, "<u>$2</u>");
+                        content = content.replace(/([\-]{2})(.*?)([\-]{2})/g, "<strike>$2</strike>");
                         content = content.replace(/([\*]{3})(.*?)([\*]{3})/g, "<strong><i>$2</i></strong>");
                         content = content.replace(/([\*]{2})(.*?)([\*]{2})/g, "<strong>$2</strong>");
                         content = content.replace(/([\*]{1})(.*?)([\*]{1})/g, "<i>$2</i>");
-                        content = content.replace(/([\_]{2})(.*?)([\_]{2})/g, "<u>$2</u>");
                         content = content.replace(/((\!\()(.*?)(\)))((\[)(.*?)(\]))/g, "<a href=\"$7\">$3</a>");
                         
                         let page = document.createElement(tag);
@@ -225,9 +225,9 @@ function readFile(file) {
                 }
                 let div = document.createElement("div");
                 div.setAttribute("class", "share");
+
                 let share = document.createElement("a");
-                share.id = "no-shadow";
-                //data-original-title="Some tooltip text!"
+                share.setAttribute("class", "no-shadow");
                 share.setAttribute("data-toggle", "tooltip");
                 share.setAttribute("data-original-title", "Copy blog link")
                 share.setAttribute("onclick", "copyToClipboard(\'" + article.id + "\')");
